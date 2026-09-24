@@ -1,21 +1,22 @@
 # Public Android Hello
 
-A minimal public Android application that can be built with the Android SDK command-line tools.
+A minimal public Android application with a valid Gradle project at the repository root.
 
 ## Requirements
 
-- JDK 8 or newer
+- JDK 17
 - Android SDK platform `android-35`
-- Android SDK build-tools `35.0.0`
 
 ## Build
 
 ```bash
-./scripts/build_release_apk.sh
+./gradlew assembleRelease
 ```
 
-The signed APK is written to:
+The release APK is written to:
 
 ```text
-build/public-android-hello-release.apk
+app/build/outputs/apk/release/app-release-unsigned.apk
 ```
+
+The legacy SDK command-line build script is still available at `scripts/build_release_apk.sh`.

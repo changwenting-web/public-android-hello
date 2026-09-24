@@ -1,4 +1,6 @@
 build/
+app/build/
+.gradle/
 *.apk
 *.keystore
 .DS_Store
