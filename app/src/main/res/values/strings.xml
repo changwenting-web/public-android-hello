@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Public Android Hello</string>
+    <string name="home_message">Hello from a public Android build.</string>
+</resources>
